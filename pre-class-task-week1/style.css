@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+main {
+  padding: 0;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 16px 0;
+}
+div#content {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+#data {
+  padding-left: 50px;
+  padding-right: 45px;
+  flex: 40%;
+}
+
+#data > * {
+  word-break: break-word;
+}
+
+#data h1 {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 117px;
+}
+
+.summary {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 55px;
+  color: rgb(151, 151, 151);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.user-info {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  margin-right: 21px;
+}
+
+#formSection {
+  background-image: url("/assets/images/imageBackground.png");
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 45%;
+  padding: 25px;
+}
+
+#formSection h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#formInput {
+  padding: 25px 71px 25px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 634px;
+  box-shadow: -6px 3px 24px -1px rgba(0, 0, 0, 0.25);
+}
+
+.form-group {
+  margin: 0 auto 8px auto;
+}
+.form-control {
+  width: 100%;
+  padding: 8px 14px;
+  margin-top: 8px;
+  font-size: 16px;
+  border: 2px solid rgba(212, 212, 212, 1);
+  background-color: rgba(241, 241, 241, 1);
+  background-clip: padding-box;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.form-control:focus {
+  outline: 0;
+  border: 2px solid rgb(138, 138, 138);
+  border-radius: 10px;
+  box-shadow: -6px 3px 24px -1px rgba(0, 0, 0, 0.25);
+}
+
+.input-textarea {
+  min-height: 100px;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid rgba(212, 212, 212, 1);
+  background-color: rgba(241, 241, 241, 1);
+  border-radius: 10px;
+  resize: none;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.input-textarea:focus {
+  outline: 0;
+  border: 2px solid rgb(138, 138, 138);
+  border-radius: 10px;
+  box-shadow: -6px 3px 24px -1px rgba(0, 0, 0, 0.25);
+}
+
+.button-submit {
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  display: block;
+  outline: 0;
+  height: 55px;
+  width: 350px;
+  margin: 12px auto 0;
+  border: 0;
+  border-radius: 10px;
+  background: #057291;
+  transition: all 0.3s linear;
+}
+
+.button-submit:hover {
+  cursor: pointer;
+  background: #0694bb;
+  box-shadow: -6px 3px 24px -1px rgba(0, 0, 0, 0.25);
+}

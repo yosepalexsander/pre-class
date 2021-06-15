@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <title>Document</title>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main role="main">
+    <div id="content">
+      <section id="data">
+        <h1 id="dataName" class="name"></h1>
+        <p id="dataSummary" class="summary"></p>
+        <div class="user-info">
+          <img src="assets/icons/telephone 1.svg" alt="phone icon">
+          <p id="dataPhone"></p>
+        </div>
+        <div class="user-info">
+          <img src="assets/icons/email 1.svg" alt="email icon">
+          <p id="dataEmail"></p>
+        </div>
+        <div class="user-info">
+          <img src="assets/icons/real-estate 1.svg" alt="address icon">
+          <p id="dataAddress"></p>
+        </div>
+        <!-- <p id="dataPhone" class="user-info"></p>
+        <p id="dataEmail"class="user-info"></p>
+        <p id="dataAddress" class="user-info"></p> -->
+      </section>
+      <section id="formSection">
+        <div id="formInput">
+          <h1>Input Your Data</h1>
+          <form id="userForm" action="">
+            <div class="form-group">
+              <label for="name">Name</label><br>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Jhon Doe"><br>
+            </div>
+            <div class="form-group">
+              <label for="summary">Summary</label><br>
+              <input type="text" id="summary" name="summary" class="form-control"><br>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label><br>
+              <input type="tel" id="phone" name="phone" class="form-control" pattern="[0-9]{11,13}" placeholder="085780803322"><br>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label><br>
+              <input type="email" id="email" name="email" class="form-control" placeholder="jhondoe@gmail.com"><br>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label><br>
+              <textarea id="address" name="address" cols="21" rows="3" class="input-textarea" placeholder="your address..."></textarea><br>
+            </div>
+            <input type="submit" value="Submit" class="button-submit">
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
