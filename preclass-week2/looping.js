@@ -51,3 +51,38 @@ for (let i = 1; i < 5; i++) { //outer loop
   }
   document.write('<br>')
 }
+
+// prime number
+function isPrime(num) {
+  if (num === 2) {
+    return true
+  }
+
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true
+}
+
+function printPrime(num) {
+  for (let i = 2; i <= num; i++) {
+    if(isPrime(i)) {
+      console.log(i)
+    }
+  }
+}
+
+printPrime(20);
+
+
+let num = 6;
+
+if(num % 2 === 0) {
+  console.log('even');
+}
+
+if(num % 2 !== 0) {
+  console.log('even')
+}
